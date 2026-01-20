@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://özkahramanmaraşbranda.com.tr/sitemap.xml
