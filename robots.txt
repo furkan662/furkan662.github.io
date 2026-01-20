@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://özkahramanmaraşbranda.com.tr/sitemap.xml
+Sitemap: https://xn--zkahramanmarabranda-p6b23t.com.tr/sitemap.xml
