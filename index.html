@@ -75,20 +75,21 @@
           max-width: 800px;
           margin: 40px auto;
         }
-        @media (max-width: 768px) { 
-            .resim-kutusu .gallery { 
-                grid-template-columns: repeat(2, 1fr);
-        }
+        @media (max-width: 768px) {
+  .resim-kutusu .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-        .resim-kutusu .gallery img {,
-            object-fit: contain;
-        }
-    }
-       @media (max-width: 420px) { 
-           .resim-kutusu .gallery { 
-               grid-template-columns: 1fr; 
-           } 
-       }
+  .resim-kutusu .gallery img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 420px) {
+  .resim-kutusu .gallery {
+    grid-template-columns: 1fr;
+  }
+}
             .hero-img { 
                 max-width: 100%; 
                 height: auto; 
@@ -163,14 +164,6 @@
            height: auto;
            display: block;
         }
-
-        .gallery img {
-            max-width: 300px;
-            height: auto;
-            object-fit: contain;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }  
             
         .gallery-4 { 
             display: grid; 
@@ -273,7 +266,7 @@
 <body>
 
 <header>
-<div class="resim kutusu">
+<div class="resim-kutusu">
     <img src="dukkan.jpg" alt="Dükkan" class="dukkan-foto">
 </div>
     <img src="logo.png" alt="Öz Kahramanmaraş Branda Logo" style="max-width:200px; display:block; margin:0 auto 15px;">
@@ -342,6 +335,7 @@
 
 </body>
 </html>
+
 
 
 
