@@ -231,7 +231,7 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  align-items: center; /* dikey hizalama */
+  align-items: center; 
 }
 
 .duo-gallery img {
@@ -241,6 +241,40 @@
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
+        .contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.btn-phone { background: #2ecc71; }
+.btn-whatsapp { background: #25d366; }
+.btn-instagram { background: #e1306c; }
+.btn-facebook { background: #1877f2; }
+.btn-mail { background: #6c757d; }
+.btn-map { background: #007bff; }
+
+        
     </style>
     <script type="application/ld+json">
 {
@@ -268,24 +302,38 @@
     <h1>ÖZ KAHRAMANMARAŞ BRANDA</h1>
     <p>Kaliteli Branda • Tente • Gölgelendirme</p>
     <nav>
-       <div class="social-top">
-        <a href="tel:05436141053"><i class="fa-solid fa-phone"></i> Telefon</a>
-        <a href="https://wa.me/905436141053?text=Merhaba%20tente%20%C3%A7ad%C4%B1r%20branda%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum" target="_blank"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-        <a href="https://instagram.com/ozkahramanmarassbranda" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
-     </div>
-     <div class="social-bottom">
-        <a href="https://facebook.com/Ismail%20Nar" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
-        <a href="mailto:ismailnar466@icloud.com"><i class="fa-solid fa-envelope"></i> Mail</a>
-        <a href="https://maps.app.goo.gl/K1xEPDHp1ggTb8wa7?g_st=iw" target="_blank" 
-           style="display:inline-block; margin-top:15px; padding:12px 24px; background:#007bff; color:#fff; text-decoration:none; border-radius:6px; font-weight:bold;"> 
-            📍 Yol Tarifi Al
+       <div class="contact-buttons">
+  <a href="tel:05436141053" class="contact-btn btn-phone">
+    <i class="fa-solid fa-phone"></i> Telefon
+  </a>
+
+  <a href="https://wa.me/905436141053" target="_blank" class="contact-btn btn-whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+  </a>
+
+  <a href="https://instagram.com/ozkahramanmarassbranda" target="_blank" class="contact-btn btn-instagram">
+    <i class="fa-brands fa-instagram"></i> Instagram
+  </a>
+
+  <a href="https://facebook.com/Ismail%20Nar" target="_blank" class="contact-btn btn-facebook">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a>
+
+  <a href="mailto:ismailnar466@icloud.com" class="contact-btn btn-mail">
+    <i class="fa-solid fa-envelope"></i> Mail
+  </a>
+
+  <a href="https://maps.app.goo.gl/K1xEPDHp1ggTb8wa7?g_st=iw" target="_blank" class="contact-btn btn-map">
+    <i class="fa-solid fa-location-dot"></i> Yol Tarifi Al
+  </a>
+</div>
      </a>
      </div>
     </nav>
 </header>
 
 <section class="resim-kutusu">
-    <h2>Şeffaf Branda Çalışmaları</h2>
+    <h2 class="section-title">Şeffaf Branda <span>Çalışmalarız</span></h2>
     <div class="gallery">
         <img src="branda1.jpg" alt="Şeffaf Branda 1">
         <img src="branda2.jpg" alt="Şeffaf Branda 2">
@@ -295,7 +343,7 @@
 </section>
 
 <section class="resim-kutusu">
-    <h2>Körüklü ve Mavsallı Tente Çalışmaları</h2>
+    <h2 class="section-title">Körüklü ve Mavsallı Tente <span>Çalışmalarız</span></h2>
     <div class="gallery">
         <img src="tente1.jpg" alt="Tente 1">
         <img src="tente2.jpg" alt="Tente 2">
@@ -304,7 +352,7 @@
 </section>
 
 <section class="resim-kutusu">
-    <h2>Şemsiye ve Gölgelik Çalışmaları</h2>
+    <h2 class="section-title">Şemsiye ve Gölgelik <span>Çalışmalarız</span>
     <div class="gallery">
         <img src="semsiye1.jpg" alt="Şemsiye 1">
         <img src="semsiye2.jpg" alt="Şemsiye 2">
@@ -330,6 +378,7 @@
 
 </body>
 </html>
+
 
 
 
