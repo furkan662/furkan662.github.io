@@ -46,7 +46,7 @@
 
 .resim-kutusu .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
@@ -57,7 +57,15 @@
   border-radius: 8px;
 }
 
+.iletisim {
+      background-color: #f5f5f5; /* açık gri */
+      padding: 20px;
+      max-width: 800px;
+      margin: 40px auto;
+      border-radius: 10px;
+      text-align: center;
 
+}
         .logo-kutu {
           background-color: #000;     
           color: #fff;              
@@ -79,7 +87,10 @@
                 max-width: 100%; 
                 height: auto; 
                 display: block; 
-                margin: 0 auto 20px auto; }
+                margin: 0 auto 20px auto; 
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            }
 
           .dukkan-foto {
             width: 300px; 
@@ -262,7 +273,6 @@
 
 <header>
     <img src="dukkan.jpg" alt="Dükkan" class="hero-img">
-    <img src="dukkan.jpg" alt="Dükkan Fotoğrafı" class="dukkan-foto">
     <img src="logo.png" alt="Öz Kahramanmaraş Branda Logo" style="max-width:200px; display:block; margin:0 auto 15px;">
     <h1>ÖZ KAHRAMANMARAŞ BRANDA</h1>
     <p>Kaliteli Branda • Tente • Gölgelendirme</p>
@@ -329,6 +339,7 @@
 
 </body>
 </html>
+
 
 
 
