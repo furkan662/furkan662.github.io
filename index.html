@@ -130,15 +130,6 @@
                 box-shadow: 0 4px 12px rgba(0,0,0,0.2);
             }
 
-          .dukkan-foto {
-            width: 260px; 
-            height: 260px; 
-            object-fit: cover; 
-            display: block;  
-            margin: 20px auto;  
-            border-radius: 10px;  
-        }
-        
            header {
             background: #222;
             color: #fff;
@@ -336,6 +327,25 @@
   transform: translateY(-3px);
   opacity: 0.9;
 }
+   .header-ust {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+} 
+    .dukkan-wrapper {
+  background: #111;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+    .dukkan-foto {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
 
 .btn-phone { background: #2ecc71; }
 .btn-whatsapp { background: #25d366; }
@@ -365,9 +375,11 @@
 <body>
 
 <header>
-<section class="resim-kutusu">
-  <img src="dukkan.jpg" alt="Dükkan" class="dukkan-foto">
-</section>
+  <div class="header-ust">
+
+    <div class="dukkan-wrapper">
+      <img src="dukkan.jpg" alt="Dükkan" class="dukkan-foto">
+    </div>
     <img src="logo.png" alt="Öz Kahramanmaraş Branda Logo" style="max-width:200px; display:block; margin:0 auto 15px;">
     <h1>ÖZ KAHRAMANMARAŞ BRANDA</h1>
     <p>Kaliteli Branda • Tente • Gölgelendirme</p>
@@ -454,6 +466,7 @@
     
 </body>
 </html>
+
 
 
 
