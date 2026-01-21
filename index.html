@@ -121,7 +121,6 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
 }
-}
             .hero-img { 
                 max-width: 100%; 
                 height: auto; 
@@ -295,6 +294,30 @@
   justify-content: center;
   margin-top: 20px;
 }
+        .whatsapp-menu {
+  display: none;
+  margin-top: 10px;
+  background: #1f1f1f;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.whatsapp-menu a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 6px;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.whatsapp-menu a:hover {
+  opacity: 0.9;
+}
 
 .contact-btn {
   display: flex;
@@ -354,9 +377,30 @@
     <i class="fa-solid fa-phone"></i> Telefon
   </a>
 
-  <a href="https://wa.me/905436141053" target="_blank" class="contact-btn btn-whatsapp">
-    <i class="fa-brands fa-whatsapp"></i> WhatsApp
-  </a>
+ <a href="https://wa.me/905436141053?text=Tente%20hakkında%20bilgi%20almak%20istiyorum"
+   target="_blank" class="contact-btn btn-whatsapp">
+  ☀️ Tente Hakkında Bilgi Al
+</a>
+
+<a href="https://wa.me/905436141053?text=Çadır%20hakkında%20bilgi%20almak%20istiyorum"
+   target="_blank" class="contact-btn btn-whatsapp">
+  ⛺ Çadır Hakkında Bilgi Al
+</a>
+
+<a href="https://wa.me/905436141053?text=Şemsiye%20hakkında%20bilgi%20almak%20istiyorum"
+   target="_blank" class="contact-btn btn-whatsapp">
+  ☂️ Şemsiye Hakkında Bilgi Al
+</a>
+
+<a href="https://wa.me/905436141053?text=Branda%20hakkında%20bilgi%20almak%20istiyorum"
+   target="_blank" class="contact-btn btn-whatsapp">
+  🧵 Branda Hakkında Bilgi Al
+</a>
+
+<a href="https://wa.me/905436141053?text=Fiyat%20teklifi%20almak%20istiyorum"
+   target="_blank" class="contact-btn btn-whatsapp">
+  💰 Fiyat Teklifi Al
+</a>
 
   <a href="https://instagram.com/ozkahramanmarassbranda" target="_blank" class="contact-btn btn-instagram">
     <i class="fa-brands fa-instagram"></i> Instagram
@@ -420,9 +464,16 @@
     © 2026 ÖZ KAHRAMANMARAŞ BRANDA | Firma Sahibi: İsmail Nar
     <strong>1994’ten bu yana hizmetinizdeyiz</strong>
 </footer>
+    <script>
+function toggleWhatsappMenu() {
+  const menu = document.getElementById("whatsapp-menu");
+  menu.style.display = (menu.style.display === "block") ? "none" : "block";
+}
+</script>
 
 </body>
 </html>
+
 
 
 
