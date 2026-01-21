@@ -49,7 +49,7 @@
 
 .resim-kutusu .gallery img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -76,16 +76,17 @@
   .resim-kutusu .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .resim-kutusu .gallery img {
-    object-fit: contain;
-  }
 }
 
 @media (max-width: 420px) {
   .resim-kutusu .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+    .resim-kutusu .gallery img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
 }
             .hero-img { 
                 max-width: 100%; 
@@ -253,7 +254,6 @@
   color: #ffb703;
   font-weight: bold;
 }
-}
         .contact-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -363,7 +363,7 @@
 </section>
 
 <section class="resim-kutusu">
-    <h2 class="section-title">Şemsiye ve Gölgelik <span>Çalışmalarımız</span>
+    <h2 class="section-title">Şemsiye ve Gölgelik <span>Çalışmalarımız</span></h2>
     <div class="gallery">
         <img src="semsiye10.jpg" alt="Şemsiye 10">
         <img src="semsiye11.jpg" alt="Şemsiye 11">
@@ -389,6 +389,7 @@
 
 </body>
 </html>
+
 
 
 
