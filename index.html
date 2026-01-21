@@ -179,11 +179,6 @@
             font-size: 24px;
             margin-bottom: 20px;
         }
-         img {
-           max-width: 100%;
-           height: auto;
-           display: block;
-        }
             
         .gallery-4 { 
             display: grid; 
@@ -343,7 +338,7 @@
   width: 220px;
   height: 220px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 102px;
   display: block;
 }
 
@@ -375,7 +370,8 @@
 <body>
 
 <header>
-  <div class="header-ust">
+  
+    <div class="header-ust">
 
     <div class="dukkan-wrapper">
       <img src="dukkan.jpg" alt="Dükkan" class="dukkan-foto">
@@ -394,6 +390,7 @@
 </a>
 
 <div id="whatsapp-menu" class="whatsapp-menu">
+  <a href="javascript:void(0)" onclick="toggleWhatsappMenu()" class="contact-btn btn-whatsapp">  
   <a href="https://wa.me/905436141053?text=Tente%20hakkında%20bilgi%20almak%20istiyorum" target="_blank">☀️ Tente</a>
   <a href="https://wa.me/905436141053?text=Çadır%20hakkında%20bilgi%20almak%20istiyorum" target="_blank">⛺ Çadır</a>
   <a href="https://wa.me/905436141053?text=Şemsiye%20hakkında%20bilgi%20almak%20istiyorum" target="_blank">☂️ Şemsiye</a>
@@ -463,9 +460,21 @@
     © 2026 ÖZ KAHRAMANMARAŞ BRANDA | Firma Sahibi: İsmail Nar
     <strong>1994’ten bu yana hizmetinizdeyiz</strong>
 </footer>
+
+    <script>
+function toggleWhatsappMenu() {
+  const menu = document.getElementById("whatsapp-menu");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
     
 </body>
 </html>
+
 
 
 
