@@ -78,10 +78,13 @@
         @media (max-width: 768px) { 
             .resim-kutusu .gallery { 
                 grid-template-columns: repeat(2, 1fr);
+        }
 
+    }
        @media (max-width: 480px) { 
            .resim-kutusu .gallery { 
-               grid-template-columns: 1fr; } 
+               grid-template-columns: 1fr; 
+           } 
        }
             .hero-img { 
                 max-width: 100%; 
@@ -150,12 +153,7 @@
             font-size: 24px;
             margin-bottom: 20px;
         }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-            margin-bottom: 20px;
+        
         }
          img {
            max-width: 100%;
@@ -273,8 +271,8 @@
 
 <header>
 <div class="resim kutusu">
-    <img src="dukkan.jpg" alt="Dükkan"
-        </div>
+    <img src="dukkan.jpg" alt="Dükkan" class="dukkan-foto">
+</div>
     <img src="logo.png" alt="Öz Kahramanmaraş Branda Logo" style="max-width:200px; display:block; margin:0 auto 15px;">
     <h1>ÖZ KAHRAMANMARAŞ BRANDA</h1>
     <p>Kaliteli Branda • Tente • Gölgelendirme</p>
@@ -341,6 +339,7 @@
 
 </body>
 </html>
+
 
 
 
